@@ -1,0 +1,341 @@
+* { 
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ccacff;
+}
+ 
+nav {
+  background-color: #ffffff;
+  padding: 20px 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ 
+.navbar-furry {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+ 
+.navbar-furry a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+ 
+.navbar-furry a:hover {
+  background-color: #ccacff;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px #ccacff;
+}
+
+.navbar-furry a,
+.dropbtn {
+  text-decoration: none;
+  background-color: transparent;
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  display: flex;             
+  align-items: center;        
+}
+ 
+.navbar-furry a:hover,
+.dropbtn:hover {
+  background-color: #ccacff;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px #ccacff;
+}
+ 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+ 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1e4ff;
+  min-width: 160px;
+  border-radius: 8px;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+ 
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+ 
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.hero {
+  background-color: #E0B6FF;  
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+ 
+.hero-content h1 {
+  font-size: 50px;
+  animation: fadeDown 1s ease-in-out;
+}
+ 
+.hero-content p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+  
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #FFFFAD;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+ 
+.btn:hover {
+  background-color: white;
+  color: #E0B6FF;
+}
+ 
+.section {
+  padding: 60px 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  flex: 1 1 300px;           
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ 
+.section h2 {
+  font-size: 28px;
+  color: #FFFFAD;
+  margin-bottom: 15px;
+}
+ 
+.section p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.secciones-container {
+  display: flex;
+  justify-content: center;   
+  align-items: stretch;      
+  gap: 20px;                  
+  flex-wrap: wrap;           
+  padding: 20px;
+}
+
+.section:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.colored {
+  background-color: #E0B6FF;
+  border-radius: 15px;
+  margin: 30px auto;
+  width: 85%;
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#integrantes {
+  padding: 50px 0;
+}
+
+.carousel-container {
+  width: 80%;              
+  margin: 50px auto;        
+  background: white;         
+  padding: 20px;            
+  border-radius: 20px;       
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+}
+
+.carousel {
+  width: 80%;          
+  margin: auto;      
+}
+
+.carousel-inner img {
+  width: 100%;         
+  height: 600px;       
+  object-fit: cover;   
+  border-radius: 15px;
+}
+ 
+footer {
+  background-color: #FFFFAD;
+  color: #000;              
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+  
+.section.quienes-somos h2,
+.section.vision h2 {
+  color: #E0B6FF;
+}
+
+    .hero {
+  background-color: #E0B6FF;  
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+ 
+.hero-content h1 {
+  font-size: 50px;
+  animation: fadeDown 1s ease-in-out;
+}
+ 
+.hero-content p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+ 
+ 
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #FFFFAD;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+ 
+.btn:hover {
+  background-color: white;
+  color: #E0B6FF;
+}
+ 
+.section {
+  padding: 60px 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  flex: 1 1 300px;           
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ 
+.section h2 {
+  font-size: 28px;
+  color: #FFFFAD;
+  margin-bottom: 15px;
+}
+ 
+.section p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.secciones-container {
+  display: flex;
+  justify-content: center;   
+  align-items: stretch;      
+  gap: 20px;                  
+  flex-wrap: wrap;           
+  padding: 20px;
+}
+
+.section:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.colored {
+  background-color: #E0B6FF;
+  border-radius: 15px;
+  margin: 30px auto;
+  width: 85%;
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#integrantes {
+  padding: 50px 0;
+}
+
+.carousel-container {
+  width: 80%;              
+  margin: 50px auto;        
+  background: white;         
+  padding: 20px;            
+  border-radius: 20px;       
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+}
+
+.carousel {
+  width: 80%;          
+  margin: auto;      
+}
+
+.carousel-inner img {
+  width: 100%;         
+  height: 600px;       
+  object-fit: cover;   
+  border-radius: 15px;
+}
+ 
+footer {
+  background-color: #FFFFAD;
+  color: #000;              
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+ 
+ 
+.section.quienes-somos h2,
+.section.vision h2 {
+  color: #E0B6FF;
+}

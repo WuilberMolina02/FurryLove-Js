@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="moreinfo.css">
+  <title>Beneficios</title>
+</head>
+<body>
+
+<!-- LOGO -->
+<div style="text-align: center; padding: 20px; background-color: white;">
+  <img src="imagenes/logo.png" alt="Logo FurryFriends" style="height: 50px; vertical-align: middle; margin-right: 10px;">
+  <span style="font-size: 32px; color: #444; font-weight: 600;">
+     Furrylove✨🐾
+  </span>
+</div>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="navbar">
+    <a href="index.php">Inicio</a>
+    <a href="perrosGatos.html">Adopta Ya</a>
+    <a href="nosotros.html">Sobre Nosotros</a>
+    <a href="furryshop.php">FurryShop</a>
+    <a href="refugios.php" class="active-link">Refugios</a>
+    <a href="registro.php">Registro/Iniciar sesión</a>
+  </div>
+  <div id="hamburger" class="hamburger">&#9776;</div>
+</nav>
+
+<!-- MENÚ LATERAL MÓVIL -->
+<div id="sideMenu" class="side-menu">
+  <a href="javascript:void(0)" class="close-btn" id="closeBtn">&times;</a>
+  <div class="menu-links">
+    <a href="index.php">Inicio</a>
+    <a href="perrosGatos.html">Adopta Ya</a>
+    <a href="nosotros.html">Sobre Nosotros</a>
+    <a href="furryshop.php">FurryShop</a>
+    <a href="refugios.php">Refugios</a>
+    <a href="registro.php">Registro/Iniciar sesión</a>
+  </div>
+</div>
+
+<!-- FONDO OSCURO PARA MÓVIL -->
+<div id="overlay" class="overlay"></div>
+ 
+  <main>
+    <section class="titulo-principal">
+      <h1>Descubre los Beneficios de Adoptar</h1>
+      <p>Porque cada huella cuenta en tu vida 🐾💜</p>
+    </section>
+ 
+   
+    <section class="galeria">
+      <img src="imagenes/gato_1.jpg" alt="Perro feliz">
+      <img src="imagenes/perro_1.jpg" alt="Gato relajado">
+      <img src="imagenes/gato_2.jpg" alt="Perro jugando">
+      <img src="imagenes/perro_3.jpg" alt="Gato curioso">
+    </section>
+ 
+   
+    <section class="contenedor-beneficios">
+      <div class="caja">
+        <h2>🐶 Beneficios de tener un perro</h2>
+        <ul>
+          <li>Compañeros leales y protectores.</li>
+          <li>Estilo de vida más activo.</li>
+          <li>Mejoran el estado de ánimo y reducen el estrés.</li>
+          <li>Favorecen la socialización.</li>
+        </ul>
+      </div>
+ 
+            <div class="caja adopcion">
+        <h2>💜 ¿Por qué adoptar?</h2>
+        <p>
+          Adoptar es darle una segunda oportunidad a un animal que necesita un hogar.
+          Con tu ayuda, salvas vidas, apoyas a los refugios y ganas un amigo fiel para siempre.
+        </p>
+      </div>
+
+      <div class="caja">
+        <h2>🐱 Beneficios de tener un gato</h2>
+        <ul>
+          <li>Independientes y fáciles de cuidar.</li>
+          <li>Proporcionan calma y compañía.</li>
+          <li>Reducen la ansiedad.</li>
+          <li>Limpios y silenciosos.</li>
+        </ul>
+      </div>
+ 
+    </section>
+ 
+ 
+    <section class="frase">
+      <h2>“Adopt with your heart”</h2>
+    </section>
+  </main>
+ 
+ 
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navbar = document.getElementById('navbar');
+ 
+    hamburger.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+    });
+  </script>
+
+  <script src="navbar.js"></script>
+</body>
+</html>
+ 

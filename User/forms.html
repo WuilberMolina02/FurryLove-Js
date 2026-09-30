@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formulario</title>
+ 
+  <!-- Bootstrap CSS solo una vez -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+ 
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+ 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+ 
+  <!-- Tu CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+  <nav class="navbar navbar-expand-md bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="Logo riginal.png" alt="FURRYLOVE" width="90" height="80" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="mascotas.html">Adopta Ya</a>
+            <div class="tooltip">Encuentra tu nuevo amigo 🐶🐱</div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Refugios</a>
+            <div class="tooltip">Refugios confiables 🏠🐾</div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FurryShop</a>
+            <div class="tooltip">Los mejores accesorios para tu mascota 🛍️</div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Registrarse.html">Registrarse/Iniciar sesión</a>
+            <div class="tooltip">Crea una cuenta nueva con FurryLove 🐶🐱</div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img src="imagenes/1361728.png" alt="perfil" height="40" width="40" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <!-- form-card -->
+        <div class="form-card p-4">
+ 
+          <h2 class="form-title">
+            <i class="bi bi-paw-fill me-2"></i>Formulario de Adopción
+          </h2>
+ 
+          <div class="logo-container text-center mb-4">
+            <img src="Logo riginal.png" alt="Logo" class="logo-img" />
+          </div>
+ 
+          <form>
+            <div class="mb-3">
+              <label for="nombreCompleto" class="form-label">Nombre completo</label>
+              <input type="text" class="form-control" id="nombreCompleto" placeholder="Escribe tu nombre completo" />
+            </div>
+ 
+            <div class="mb-3">
+              <label for="dui" class="form-label">DUI</label>
+              <input type="text" class="form-control" id="dui" placeholder="00000000-0" />
+            </div>
+ 
+            <div class="mb-3">
+              <label for="direccion" class="form-label">Dirección</label>
+              <input type="text" class="form-control" id="direccion" placeholder="Tu dirección actual" />
+            </div>
+ 
+            <div class="mb-3">
+              <label for="telefono" class="form-label">Número de teléfono</label>
+              <input type="tel" class="form-control" id="telefono" placeholder="Ej. 1234-5678" />
+            </div>
+ 
+            <div class="mb-3">
+              <label for="experiencia" class="form-label">¿Tienes experiencia con mascotas?</label>
+              <textarea class="form-control" id="experiencia" rows="3" placeholder="Cuéntanos tu experiencia..."></textarea>
+            </div>
+ 
+            <div class="mb-3">
+              <label for="razon" class="form-label">¿Por qué deseas adoptar?</label>
+              <textarea class="form-control" id="razon" rows="3" placeholder="Escribe tu razón..."></textarea>
+            </div>
+ 
+            <div class="mb-3">
+              <label for="refugio" class="form-label">¿Dónde se encuentra la mascota?</label>
+              <select class="form-select" id="refugio">
+                <option disabled selected>Selecciona un refugio</option>
+                <option value="refugio1">Échame una pata</option>
+                <option value="refugio2">FMD CatDog</option>
+                <option value="refugio3">Milagros de amor</option>
+              </select>
+            </div>
+ 
+            <div class="d-grid">
+              <button type="submit" class="btn btn-new-color btn-lg">
+                <i class="bi bi-send-fill me-2"></i>Enviar solicitud
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+</html>

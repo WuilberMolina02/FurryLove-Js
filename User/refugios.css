@@ -1,0 +1,82 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+}
+
+/* HERO */
+.hero-section {
+  margin-top: 0;
+  padding-top: 0;
+  height: 300px;
+  background-color: #cd9fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-texto {
+  z-index: 2;
+  margin-left: 40px;
+}
+
+.hero-titulo {
+  font-size: 50px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.hero-img {
+  max-height: 300px;
+  bottom: 0;
+  right: 40px;
+  width: auto;
+  position: absolute;
+}
+
+/* TARJETAS DE REFUGIOS */
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.card img {
+  object-fit: cover;
+  height: 200px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #555;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .hero-titulo {
+    font-size: 32px;
+  }
+  .hero-img {
+    position: static;
+    max-height: 200px;
+  }
+}

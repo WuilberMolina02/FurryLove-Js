@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nosotros</title>
+  <link rel="stylesheet" href="nosotros.css">
+  <link rel="stylesheet" href="navbar2.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+ 
+<!-- Header con logo y nombre -->
+<div class="brand-header">
+  <img src="imagenes/logo.png" alt="Logo FurryFriends" class="brand-logo">
+  <span class="brand-title">Furrylove✨🐾</span>
+</div>
+ 
+<!-- Navbar -->
+<nav>
+  <!-- Navbar horizontal (PC) -->
+  <div class="navbar">
+    <a href="homepage.php">Inicio</a>
+    <a href="perrosGatos.html">Adopta Ya</a>
+    <a href="nosotros.html">Sobre Nosotros</a>
+    <a href="furryshop.php">FurryShop</a>
+    <a href="refugios.php">Refugios</a>
+    <div class="dropdown">
+      <a class="dropbtn">Cuenta</a>
+      <div class="dropdown-content">
+        <a href="#">Mi perfil</a>
+        <a href="#">Mis solicitudes</a>
+        <a href="logout.php">Cerrar sesión</a>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Botón hamburguesa (móvil) -->
+  <span class="hamburger">&#9776;</span>
+ 
+  <!-- Sidebar (móvil) -->
+  <div class="side-menu" id="sideMenu">
+    <a href="javascript:void(0)" class="close-btn" id="closeBtn">&times;</a>
+    <div class="menu-links">
+      <a href="homepage.php">Inicio</a>
+      <a href="perrosGatos.html">Adopta Ya</a>
+      <a href="nosotros.html">Sobre Nosotros</a>
+      <a href="furryshop.php">FurryShop</a>
+      <a href="refugios.php">Refugios</a>
+      <div class="dropdown">
+        <button class="dropbtn">Cuenta ▾</button>
+        <div class="dropdown-content">
+          <a href="#">Mi perfil</a>
+          <a href="#">Mis solicitudes</a>
+          <a href="logout.php">Cerrar sesión</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>🐾 FURRYLOVE</h1>
+    <p>adopt with your heart</p>
+  </div>
+</section>
+ 
+<section id="integrantes" class="text-center py-5">
+  <h2 class="mb-4">Nuestro Equipo</h2>
+
+  <div class="carousel-container">
+    <div id="carouselIntegrantes" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner rounded shadow">
+
+        <div class="carousel-item active">
+          <img src="imagenes/equipo3.jpg" class="d-block w-100" alt="Integrantes del equipo">
+        </div>
+
+        <div class="carousel-item">
+          <img src="imagenes/equipo2.jpg" class="d-block w-100" alt="Integrantes del equipo">
+        </div>
+
+        <div class="carousel-item">
+          <img src="imagenes/Imagen.grupo.jpg" class="d-block w-100" alt="Integrantes del equipo">
+        </div>
+
+        <div class="carousel-item">
+          <img src="imagenes/equipo1.jpg" class="d-block w-100" alt="Integrantes del equipo">
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselIntegrantes" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselIntegrantes" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+</section>
+ 
+<div class="secciones-container">
+  <section id="quienes-somos" class="section colored slide-in-left">
+    <h2>Quiénes Somos</h2>
+    <p>
+      Somos un sitio web diseñado para conectar a refugios de El Salvador con personas interesadas
+      en adoptar perros y gatos. Nuestro objetivo es facilitar la adopción responsable y
+      ofrecerles a las mascotas una segunda oportunidad de tener un hogar lleno de amor.
+    </p>
+  </section>
+ 
+  <section id="mision" class="section colored slide-in-left">
+    <h2>Misión</h2>
+    <p>
+      "Conectar corazones y patas: Facilitamos la adopción responsable de perros y gatos
+      en refugios de El Salvador, brindando una segunda oportunidad a miles de mascotas."
+    </p>
+  </section>
+ 
+  <section id="vision" class="section colored slide-in-left">
+    <h2>Visión</h2>
+    <p>
+      "Ser la plataforma líder en El Salvador en adopción de mascotas, creando un país
+      donde cada perro y gato tenga la oportunidad de vivir en un hogar lleno de amor,
+      respeto y cuidados."
+    </p>
+  </section>
+</div>
+ 
+<footer>
+  <p>© 2025 FurryLove - Todos los derechos reservados</p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="navbar2.js"></script>
+
+</body>
+</html>

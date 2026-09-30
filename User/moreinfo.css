@@ -1,0 +1,167 @@
+:root {
+  --morado: #E0B6FF;
+  --amarillo: #FFFFAD;
+  --texto: #4b2c6f;
+}
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+ 
+.logo-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 20px;
+}
+ 
+.logo-header img {
+  height: 50px;
+}
+ 
+.logo-header span {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--texto);
+}
+  
+.hamburger {
+  font-size: 1.8em;
+  cursor: pointer;
+  display: none;
+}
+ 
+nav{
+  background-color: #ffffff;
+  padding: 20px 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ 
+.navbar{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+ 
+.navbar a{
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+ 
+.navbar a:hover{
+  background-color: #ccacff;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px #ccacff;
+}
+
+ 
+.titulo-principal {
+  text-align: center;
+  padding: 40px 15px;
+  background: linear-gradient(to right, var(--morado), var(--amarillo));
+  color: var(--texto);
+}
+ 
+ 
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+ 
+.galeria img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+ 
+.galeria img:hover {
+  transform: scale(1.05);
+}
+ 
+ 
+.contenedor-beneficios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+ 
+.caja {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ 
+.caja h2 {
+  color: var(--texto);
+  margin-bottom: 15px;
+}
+ 
+.caja ul {
+  list-style: none;
+}
+ 
+.caja ul li {
+  margin: 8px 0;
+  padding-left: 10px;
+  border-left: 4px solid var(--morado);
+}
+ 
+.caja p {
+  line-height: 1.5;
+}
+ 
+.caja:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+ 
+.caja.adopcion {
+  background-color: var(--morado);
+  color: var(--texto);
+}
+ 
+ 
+.frase {
+  background-color: var(--amarillo);
+  padding: 30px;
+  text-align: center;
+  font-style: italic;
+  color: var(--texto);
+  font-size: 1.2em;
+  border-radius: 10px;
+  margin: 20px;
+}
+ 
+ 
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+ 
+  .navbar {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+ 
+  .navbar.active {
+    display: flex;
+  }
+}
+ 
